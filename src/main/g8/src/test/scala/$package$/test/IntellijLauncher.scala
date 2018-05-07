@@ -1,7 +1,7 @@
-package uk.me.rembrandt.sparkhivespike
+package $package$.test
 
 object IntellijLauncher {
   def main(args: Array[String]) = {
-    SecurityApp.main(args)
+    MainApp.main(args)
   }
 }

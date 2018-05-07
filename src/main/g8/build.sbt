@@ -8,9 +8,6 @@ lazy val root = (project in file(".")).
     name := "$name$",
     version := "$version$",
 
-    sparkVersion := "2.3.0",
-    sparkComponents := Seq(),
-
     javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
     javaOptions ++= Seq("-Xms512M", "-Xmx2048M", "-XX:MaxPermSize=2048M", "-XX:+CMSClassUnloadingEnabled"),
     scalacOptions ++= Seq("-deprecation", "-unchecked"),
