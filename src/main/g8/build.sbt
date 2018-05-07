@@ -27,7 +27,7 @@ lazy val root = (project in file(".")).
 
       "org.scalatest" %% "scalatest" % "3.0.1" % "test",
       "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
-      "com.holdenkarau" %% "spark-testing-base" % "3.3.0" % "test"
+      "com.holdenkarau" %% "spark-testing-base" % "2.3.0_0.9.0" % "test"
     ),
 
     mainClass in (Compile, run) := Some("$package$.MainApp"),
