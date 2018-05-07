@@ -10,7 +10,7 @@ object MainApp {
       .appName("MainApp")
       .config("spark.sql.wharehouse.dir", "/user/hive/warehouse")
       .config("spark.sql.hive.metastore.version", "2.1")
-      .config("spark.sql.hive.metastore.jars", sys.env.get("HIVE_HOME").map(hh => s"$hh/lib/*").getOrElse("maven"))
+      .config("spark.sql.hive.metastore.jars", sys.env.get("HIVE_HOME").map(hh => s"$hh/lib/").getOrElse("maven"))
       .enableHiveSupport()
       .getOrCreate()
 
